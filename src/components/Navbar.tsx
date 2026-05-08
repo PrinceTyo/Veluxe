@@ -9,7 +9,7 @@ export default function Navbar() {
     <nav
       className="
         fixed w-full z-50 top-0 left-0 transition-all duration-300
-       bg-white shadow-md"
+       bg-white"
     >
       <div className="max-w-7xl mx-auto flex items-center justify-between p-4">
         <a href="#" className="flex items-center gap-2">
