@@ -1,4 +1,5 @@
 import About from "@/sections/About";
+import Advantage from "@/sections/Advantage";
 import Hero from "@/sections/Hero";
 
 export default function Home() {
@@ -6,6 +7,7 @@ export default function Home() {
     <>
       <Hero />
       <About />
+      <Advantage />
     </>
   );
 }
