@@ -34,7 +34,7 @@ export default function Service() {
               </p>
             </div>
           </div>
-          <div className="text-lg absolute -bottom-5 right-6 py-2 px-6 bg-gray-100 rounded-md">
+          <div className="text-lg absolute -bottom-5 right-6 py-2 px-6 bg-gray-100 rounded-md font-medium">
             <p>1</p>
           </div>
         </div>
@@ -56,7 +56,7 @@ export default function Service() {
               </p>
             </div>
           </div>
-          <div className="text-lg absolute -bottom-5 right-6 py-2 px-6 bg-gray-100 rounded-md">
+          <div className="text-lg absolute -bottom-5 right-6 py-2 px-6 bg-gray-100 rounded-md font-medium">
             <p>2</p>
           </div>
         </div>
@@ -77,7 +77,7 @@ export default function Service() {
               </p>
             </div>
           </div>
-          <div className="text-lg absolute -bottom-5 right-6 py-2 px-6 bg-gray-100 rounded-md">
+          <div className="text-lg absolute -bottom-5 right-6 py-2 px-6 bg-gray-100 rounded-md font-medium">
             <p>3</p>
           </div>
         </div>
@@ -97,7 +97,7 @@ export default function Service() {
               </p>
             </div>
           </div>
-          <div className="text-lg absolute -bottom-5 right-6 py-2 px-6 bg-gray-100 rounded-md">
+          <div className="text-lg absolute -bottom-5 right-6 py-2 px-6 bg-gray-100 rounded-md font-medium">
             <p>4</p>
           </div>
         </div>
@@ -118,7 +118,7 @@ export default function Service() {
               </p>
             </div>
           </div>
-          <div className="text-lg absolute -bottom-5 right-6 py-2 px-6 bg-gray-100 rounded-md">
+          <div className="text-lg absolute -bottom-5 right-6 py-2 px-6 bg-gray-100 rounded-md font-medium">
             <p>5</p>
           </div>
         </div>

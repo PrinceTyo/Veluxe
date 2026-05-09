@@ -9,7 +9,7 @@ export default function MainLayout({ children }: Props) {
   return (
     <div>
       <Navbar />
-      <main className="pt-18">{children}</main>
+      <main className="pt-18 bg-gray-50">{children}</main>
       {/* <Footer /> */}
     </div>
   );
