@@ -1,4 +1,4 @@
-// import Footer from "@/components/Footer";
+import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
 
 type Props = {
@@ -7,10 +7,10 @@ type Props = {
 
 export default function MainLayout({ children }: Props) {
   return (
-    <div>
+    <div className=" bg-gray-50">
       <Navbar />
-      <main className="pt-18 bg-gray-50">{children}</main>
-      {/* <Footer /> */}
+      <main className="pt-18">{children}</main>
+      <Footer />
     </div>
   );
 }

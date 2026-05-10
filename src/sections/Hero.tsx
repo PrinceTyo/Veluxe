@@ -14,6 +14,8 @@ export default function Hero() {
         backgroundPosition: "bottom",
       }}
     >
+      {" "}
+      relative absolute
       <div className="max-w-1/3 space-y-8">
         <h1 className="text-6xl font-medium">Luxury car rental in Italy</h1>
         <a href="">
@@ -43,7 +45,7 @@ export default function Hero() {
           </p>
         </div>
       </div>
-      <div className="absolute left-1/2 -translate-x-1/2 -bottom-16 w-[90%] flex items-center justify-between gap-12 bg-secondary/80 py-4 ps-10 pe-4 rounded-xl border border-gray-400">
+      <div className="absolute left-1/2 -translate-x-1/2 -bottom-16 w-[90%] flex items-center justify-between gap-12 bg-secondary py-4 ps-10 pe-4 rounded-xl border border-gray-400">
         <div>
           <h1 className="text-lg text-white/60">Pick Up Address</h1>
           <p>From: address, airport, hotel, ....</p>
