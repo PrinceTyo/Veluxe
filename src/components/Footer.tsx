@@ -6,16 +6,16 @@ import {
 } from "react-icons/fa";
 import { RiTwitterXFill } from "react-icons/ri";
 import { Separator } from "@/components/ui/separator";
-// import logoImage from "../assets/logo.png";
+import logoImage from "../assets/logo.png";
 
 export default function Footer() {
   return (
-    <footer className="bg-secondary mx-10 mb-10 px-4 py-20 md:px-20 space-y-10 text-white rounded-xl">
-      <div className="grid grid-cols-1 grid-rows-4 md:grid-cols-2 md:grid-rows-2 lg:grid-cols-3 lg:grid-rows-1 gap-10 md:gap-20">
+    <footer className="bg-secondary mx-4 md:mx-10 mb-10 px-8 py-1 md:py-20 md:px-20 space-y-10 text-white rounded-xl">
+      <div className="grid grid-cols-1 grid-rows-3 md:grid-cols-2 md:grid-rows-2 lg:grid-cols-3 lg:grid-rows-1 gap-10 md:gap-20">
         {/* Brand */}
         <div className="space-y-3">
           <div className="flex items-center gap-x-2">
-            {/* <img src={logoImage} alt="Logo" className="h-16" /> */}
+            <img src={logoImage} alt="Logo" className="h-14" />
             <h1 className="font-semibold text-3xl">Veluxe</h1>
           </div>
 
@@ -96,7 +96,7 @@ export default function Footer() {
 
           <p>
             <a
-              href="#services"
+              href="#service"
               className="text-md cursor-pointer hover:text-primary transition duration-300"
             >
               Services

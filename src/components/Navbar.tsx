@@ -1,20 +1,31 @@
-import { useState } from "react";
-// import logoImage from "@/assets/logo.png";
+import { useEffect, useState } from "react";
+import logoImage from "@/assets/logo.png";
 import { RxHamburgerMenu } from "react-icons/rx";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 50);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   return (
     <nav
-      className="
+      className={`
         fixed w-full z-50 top-0 left-0 transition-all duration-300
-       bg-gray-50"
+        ${scrolled ? "bg-gray-50 shadow-md" : "bg-gray-50"}
+      `}
     >
       <div className="max-w-7xl mx-auto flex items-center justify-between p-4">
         <a href="#" className="flex items-center gap-2">
-          {/* <img src={logoImage} className="h-12" alt="Logo" /> */}
-          <span className="text-xl font-semibold text-black">TerraHive</span>
+          <img src={logoImage} className="h-10" alt="Logo" />
+          <span className="text-xl font-semibold text-black">Veluxe</span>
         </a>
 
         <button
@@ -26,7 +37,7 @@ export default function Navbar() {
 
         <div
           className={`
-            absolute md:static top-full left-0 w-full md:w-auto bg-white
+            absolute md:static top-full left-0 w-full md:w-auto bg-gray-50
             transition-all duration-300 overflow-hidden
             ${
               isOpen
@@ -42,6 +53,30 @@ export default function Navbar() {
                 className="block py-2 px-4 rounded-md text-black hover:bg-primary hover:text-white transition duration-300"
               >
                 Home
+              </a>
+            </li>
+            <li>
+              <a
+                href="#about"
+                className="block py-2 px-4 rounded-md text-black hover:bg-primary hover:text-white transition duration-300"
+              >
+                About
+              </a>
+            </li>
+            <li>
+              <a
+                href="#service"
+                className="block py-2 px-4 rounded-md text-black hover:bg-primary hover:text-white transition duration-300"
+              >
+                Service
+              </a>
+            </li>
+            <li>
+              <a
+                href="#vehicles"
+                className="block py-2 px-4 rounded-md text-black hover:bg-primary hover:text-white transition duration-300"
+              >
+                Vehicles
               </a>
             </li>
           </ul>

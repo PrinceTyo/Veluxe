@@ -5,8 +5,11 @@ import { FaMapMarkedAlt } from "react-icons/fa";
 
 export default function Advantage() {
   return (
-    <section className="mx-10 px-4 bg-secondary rounded-xl" id="advantage">
-      <div className="grid grid-cols-1 lg:grid-cols-4 gap-10 px-4 md:py-10 md:px-14">
+    <section
+      className="mx-4 md:mx-10 px-4 py-10 md:py-0 bg-secondary rounded-xl"
+      id="advantage"
+    >
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 px-4 md:py-10 md:px-14">
         <div className="space-y-4">
           <div className="text-white flex items-center gap-2">
             <MdHealthAndSafety className="w-20 h-20" />

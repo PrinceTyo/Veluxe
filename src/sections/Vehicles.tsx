@@ -28,8 +28,8 @@ export default function Vehicles() {
         }}
         className="w-full"
       >
-        <div className="flex items-end justify-between mb-10">
-          <div className="space-y-2 lg:space-y-4">
+        <div className="flex flex-col md:flex-row md:items-end md:justify-between mb-10">
+          <div className="space-y-2 lg:space-y-4 w-full md:w-3/4 lg:w-full">
             <p className="font-bold text-primary border-b-4 border-primary w-fit">
               OUR VEHICLES
             </p>
@@ -54,11 +54,11 @@ export default function Vehicles() {
           <CarouselItem className="pl-1 md:basis-1/2 lg:basis-1/3 overflow-visible pt-34">
             <div className="p-1">
               <div className="relative overflow-visible rounded-lg bg-white pt-4">
-                <div className="absolute -top-48 left-1/2 -translate-x-1/2 z-10">
+                <div className="absolute -top-38 left-1/2 -translate-x-1/2 z-10">
                   <img
                     src={koenigsegImage}
                     alt="Image Properties"
-                    className="w-96 max-w-none object-contain"
+                    className="w-80 max-w-none object-contain"
                   />
                 </div>
                 <div className="p-6 space-y-4">
@@ -76,19 +76,27 @@ export default function Vehicles() {
                           size={24}
                           className="text-gray-700"
                         />
-                        <p className="text-gray-700 text-lg">AUTOMATIC</p>
+                        <p className="text-gray-700 text-md md:text-lg">
+                          AUTOMATIC
+                        </p>
                       </div>
                       <div className="flex items-center gap-x-1 p-2 bg-gray-100">
                         <PiEngine size={24} className="text-gray-700" />
-                        <p className="text-gray-700 text-lg">3500 CC</p>
+                        <p className="text-gray-700 text-md md:text-lg">
+                          3500 CC
+                        </p>
                       </div>
                       <div className="flex items-center gap-x-1 p-2 bg-gray-100">
                         <MdSpeed size={24} className="text-gray-700" />
-                        <p className="text-gray-700 text-lg">587 KM</p>
+                        <p className="text-gray-700 text-md md:text-lg">
+                          587 KM
+                        </p>
                       </div>
                       <div className="flex items-center gap-x-1 p-2 bg-gray-100">
                         <GiPowerLightning size={24} className="text-gray-700" />
-                        <p className="text-gray-700 text-lg">1280 HP</p>
+                        <p className="text-gray-700 text-md md:text-lg">
+                          1280 HP
+                        </p>
                       </div>
                     </div>
                     <Separator />
@@ -101,11 +109,13 @@ export default function Vehicles() {
                       <FaStar className="text-primary" />
                       <FaStar className="text-primary" />
                       <FaStar className="text-primary" />
-                      <p className="ms-2 text-gray-500">(90 reviews)</p>
+                      <p className="hidden lg:flex ms-2 text-gray-500">
+                        (90 reviews)
+                      </p>
                     </div>
-                    <h1 className="text-2xl font-bold text-gray-800">
+                    <h1 className="text-xl md:text-2xl font-bold text-gray-800">
                       $400/
-                      <span className="text-2xl font-light text-gray-800">
+                      <span className="text-xl md:text-2xl font-light text-gray-800">
                         day
                       </span>
                     </h1>
@@ -124,11 +134,11 @@ export default function Vehicles() {
           <CarouselItem className="pl-1 md:basis-1/2 lg:basis-1/3 overflow-visible pt-34">
             <div className="p-1">
               <div className="relative overflow-visible rounded-lg bg-white pt-4">
-                <div className="absolute -top-48 left-1/2 -translate-x-1/2 z-10">
+                <div className="absolute -top-38 left-1/2 -translate-x-1/2 z-10">
                   <img
                     src={lamborginiImage}
                     alt="Image Properties"
-                    className="w-96 max-w-none object-contain"
+                    className="w-80 max-w-none object-contain"
                   />
                 </div>
                 <div className="p-6 space-y-4">
@@ -146,19 +156,27 @@ export default function Vehicles() {
                           size={24}
                           className="text-gray-700"
                         />
-                        <p className="text-gray-700 text-lg">MANUAL</p>
+                        <p className="text-gray-700 text-md md:text-lg">
+                          MANUAL
+                        </p>
                       </div>
                       <div className="flex items-center gap-x-1 p-2 bg-gray-100">
                         <PiEngine size={24} className="text-gray-700" />
-                        <p className="text-gray-700 text-lg">2200 CC</p>
+                        <p className="text-gray-700 text-md md:text-lg">
+                          2200 CC
+                        </p>
                       </div>
                       <div className="flex items-center gap-x-1 p-2 bg-gray-100">
                         <MdSpeed size={24} className="text-gray-700" />
-                        <p className="text-gray-700 text-lg">1.288 KM</p>
+                        <p className="text-gray-700 text-md md:text-lg">
+                          1.288 KM
+                        </p>
                       </div>
                       <div className="flex items-center gap-x-1 p-2 bg-gray-100">
                         <GiPowerLightning size={24} className="text-gray-700" />
-                        <p className="text-gray-700 text-lg">1180 HP</p>
+                        <p className="text-gray-700 text-md md:text-lg">
+                          1180 HP
+                        </p>
                       </div>
                     </div>
                     <Separator />
@@ -171,11 +189,13 @@ export default function Vehicles() {
                       <FaStar className="text-primary" />
                       <FaStar className="text-primary" />
                       <FaStar className="text-primary" />
-                      <p className="ms-2 text-gray-500">(81 reviews)</p>
+                      <p className="hidden lg:flex ms-2 text-gray-500">
+                        (81 reviews)
+                      </p>
                     </div>
-                    <h1 className="text-2xl font-bold text-gray-800">
+                    <h1 className="text-xl md:text-2xl font-bold text-gray-800">
                       $210/
-                      <span className="text-2xl font-light text-gray-800">
+                      <span className="text-xl md:text-2xl font-light text-gray-800">
                         day
                       </span>
                     </h1>
@@ -194,11 +214,11 @@ export default function Vehicles() {
           <CarouselItem className="pl-1 md:basis-1/2 lg:basis-1/3 overflow-visible pt-34">
             <div className="p-1">
               <div className="relative overflow-visible rounded-lg bg-white pt-4">
-                <div className="absolute -top-48 left-1/2 -translate-x-1/2 z-10">
+                <div className="absolute -top-38 left-1/2 -translate-x-1/2 z-10">
                   <img
                     src={porscheImage}
                     alt="Image Properties"
-                    className="w-96 max-w-none object-contain"
+                    className="w-80 max-w-none object-contain"
                   />
                 </div>
                 <div className="p-6 space-y-4">
@@ -216,19 +236,27 @@ export default function Vehicles() {
                           size={24}
                           className="text-gray-700"
                         />
-                        <p className="text-gray-700 text-lg">AUTOMATIC</p>
+                        <p className="text-gray-700 text-md md:text-lg">
+                          AUTOMATIC
+                        </p>
                       </div>
                       <div className="flex items-center gap-x-1 p-2 bg-gray-100">
                         <PiEngine size={24} className="text-gray-700" />
-                        <p className="text-gray-700 text-lg">2100 CC</p>
+                        <p className="text-gray-700 text-md md:text-lg">
+                          2100 CC
+                        </p>
                       </div>
                       <div className="flex items-center gap-x-1 p-2 bg-gray-100">
                         <MdSpeed size={24} className="text-gray-700" />
-                        <p className="text-gray-700 text-lg">1.538 KM</p>
+                        <p className="text-gray-700 text-md md:text-lg">
+                          1.538 KM
+                        </p>
                       </div>
                       <div className="flex items-center gap-x-1 p-2 bg-gray-100">
                         <GiPowerLightning size={24} className="text-gray-700" />
-                        <p className="text-gray-700 text-lg">940 HP</p>
+                        <p className="text-gray-700 text-md md:text-lg">
+                          940 HP
+                        </p>
                       </div>
                     </div>
                     <Separator />
@@ -241,11 +269,13 @@ export default function Vehicles() {
                       <FaStar className="text-primary" />
                       <FaStar className="text-primary" />
                       <FaStar className="text-primary" />
-                      <p className="ms-2 text-gray-500">(47 reviews)</p>
+                      <p className="hidden lg:flex ms-2 text-gray-500">
+                        (47 reviews)
+                      </p>
                     </div>
-                    <h1 className="text-2xl font-bold text-gray-800">
+                    <h1 className="text-xl md:text-2xl font-bold text-gray-800">
                       $190/
-                      <span className="text-2xl font-light text-gray-800">
+                      <span className="text-xl md:text-2xl font-light text-gray-800">
                         day
                       </span>
                     </h1>
@@ -264,11 +294,11 @@ export default function Vehicles() {
           <CarouselItem className="pl-1 md:basis-1/2 lg:basis-1/3 overflow-visible pt-34">
             <div className="p-1">
               <div className="relative overflow-visible rounded-lg bg-white pt-4">
-                <div className="absolute -top-48 left-1/2 -translate-x-1/2 z-10">
+                <div className="absolute -top-38 left-1/2 -translate-x-1/2 z-10">
                   <img
                     src={spiderImage}
                     alt="Image Properties"
-                    className="w-96 max-w-none object-contain"
+                    className="w-80 max-w-none object-contain"
                   />
                 </div>
                 <div className="p-6 space-y-4">
@@ -286,19 +316,27 @@ export default function Vehicles() {
                           size={24}
                           className="text-gray-700"
                         />
-                        <p className="text-gray-700 text-lg">AUTOMATIC</p>
+                        <p className="text-gray-700 text-md md:text-lg">
+                          AUTOMATIC
+                        </p>
                       </div>
                       <div className="flex items-center gap-x-1 p-2 bg-gray-100">
                         <PiEngine size={24} className="text-gray-700" />
-                        <p className="text-gray-700 text-lg">1800 CC</p>
+                        <p className="text-gray-700 text-md md:text-lg">
+                          1800 CC
+                        </p>
                       </div>
                       <div className="flex items-center gap-x-1 p-2 bg-gray-100">
                         <MdSpeed size={24} className="text-gray-700" />
-                        <p className="text-gray-700 text-lg">2.129 KM</p>
+                        <p className="text-gray-700 text-md md:text-lg">
+                          2.129 KM
+                        </p>
                       </div>
                       <div className="flex items-center gap-x-1 p-2 bg-gray-100">
                         <GiPowerLightning size={24} className="text-gray-700" />
-                        <p className="text-gray-700 text-lg">1.020 HP</p>
+                        <p className="text-gray-700 text-md md:text-lg">
+                          1.020 HP
+                        </p>
                       </div>
                     </div>
                     <Separator />
@@ -311,11 +349,13 @@ export default function Vehicles() {
                       <FaStar className="text-primary" />
                       <FaStar className="text-primary" />
                       <FaStar className="text-primary" />
-                      <p className="ms-2 text-gray-500">(121 reviews)</p>
+                      <p className="hidden lg:flex ms-2 text-gray-500">
+                        (121 reviews)
+                      </p>
                     </div>
-                    <h1 className="text-2xl font-bold text-gray-800">
+                    <h1 className="text-xl md:text-2xl font-bold text-gray-800">
                       $250/
-                      <span className="text-2xl font-light text-gray-800">
+                      <span className="text-xl md:text-2xl font-light text-gray-800">
                         day
                       </span>
                     </h1>
@@ -334,11 +374,11 @@ export default function Vehicles() {
           <CarouselItem className="pl-1 md:basis-1/2 lg:basis-1/3 overflow-visible pt-34">
             <div className="p-1">
               <div className="relative overflow-visible rounded-lg bg-white pt-4">
-                <div className="absolute -top-48 left-1/2 -translate-x-1/2 z-10">
+                <div className="absolute -top-38 left-1/2 -translate-x-1/2 z-10">
                   <img
                     src={sennaImage}
                     alt="Image Properties"
-                    className="w-96 max-w-none object-contain"
+                    className="w-80 max-w-none object-contain"
                   />
                 </div>
                 <div className="p-6 space-y-4">
@@ -356,19 +396,27 @@ export default function Vehicles() {
                           size={24}
                           className="text-gray-700"
                         />
-                        <p className="text-gray-700 text-lg">MANUAL</p>
+                        <p className="text-gray-700 text-md md:text-lg">
+                          MANUAL
+                        </p>
                       </div>
                       <div className="flex items-center gap-x-1 p-2 bg-gray-100">
                         <PiEngine size={24} className="text-gray-700" />
-                        <p className="text-gray-700 text-lg">2200 CC</p>
+                        <p className="text-gray-700 text-md md:text-lg">
+                          2200 CC
+                        </p>
                       </div>
                       <div className="flex items-center gap-x-1 p-2 bg-gray-100">
                         <MdSpeed size={24} className="text-gray-700" />
-                        <p className="text-gray-700 text-lg">129 KM</p>
+                        <p className="text-gray-700 text-md md:text-lg">
+                          129 KM
+                        </p>
                       </div>
                       <div className="flex items-center gap-x-1 p-2 bg-gray-100">
                         <GiPowerLightning size={24} className="text-gray-700" />
-                        <p className="text-gray-700 text-lg">2.220 HP</p>
+                        <p className="text-gray-700 text-md md:text-lg">
+                          2.220 HP
+                        </p>
                       </div>
                     </div>
                     <Separator />
@@ -381,11 +429,13 @@ export default function Vehicles() {
                       <FaStar className="text-primary" />
                       <FaStar className="text-primary" />
                       <FaStar className="text-primary" />
-                      <p className="ms-2 text-gray-500">(69 reviews)</p>
+                      <p className="hidden lg:flex ms-2 text-gray-500">
+                        (69 reviews)
+                      </p>
                     </div>
-                    <h1 className="text-2xl font-bold text-gray-800">
+                    <h1 className="text-xl md:text-2xl font-bold text-gray-800">
                       $340/
-                      <span className="text-2xl font-light text-gray-800">
+                      <span className="text-xl md:text-2xl font-light text-gray-800">
                         day
                       </span>
                     </h1>
