@@ -49,7 +49,7 @@ export default function About() {
             Delivering world-class luxury and hypercar experiences with
             unmatched elegance, performance, and premium service.
           </p>
-          <a href="">
+          <a href="#vehicles">
             <button className="cursor-pointer py-2.5 px-8 bg-primary rounded-lg text-white font-medium">
               Discover More
             </button>
