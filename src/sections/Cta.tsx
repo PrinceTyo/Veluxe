@@ -15,7 +15,7 @@ export default function Cta() {
               exclusive hypercar collection.
             </p>
 
-            <a href="">
+            <a href="#vehicles">
               <button className="cursor-pointer py-2.5 px-8 bg-primary rounded-lg text-white font-medium">
                 Rental Now
               </button>
