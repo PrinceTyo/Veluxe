@@ -120,7 +120,7 @@ export default function Vehicles() {
                       </span>
                     </h1>
                   </div>
-                  <a href="">
+                  <a href="#vehicles">
                     <button className="text-lg cursor-pointer flex items-center justify-center w-full gap-1 py-4 px-8 bg-primary text-white font-medium">
                       Rent a Car
                       <IoIosArrowRoundForward size={24} />
